@@ -2,7 +2,9 @@ package com.example.gdg;
 
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.RatingBar;
 import android.widget.Toast;
 
@@ -13,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.gdg.Adapters.ShowFeedbackAdapters;
 import com.example.gdg.Models.ShowFeedbackModel;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +31,7 @@ public class ShowFeedbacks extends AppCompatActivity {
     ShowFeedbackAdapters showFeedbackAdapters;
     ArrayList<ShowFeedbackModel> list;
     RatingBar ratingBar;
+    FloatingActionButton btn;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -39,6 +43,15 @@ public class ShowFeedbacks extends AppCompatActivity {
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         progressDialog.setMessage("Please Wait While We Load Reviews From Database...");
         progressDialog.show();
+
+
+        btn = findViewById(R.id.floatingActionButton2);
+        btn.setOnClickListener( new View.OnClickListener( ) {
+            @Override
+            public void onClick (View v) {
+                startActivity( new Intent( ShowFeedbacks.this,ChatSystem.class ) );
+            }
+        } );
 
 
         recyclerView = findViewById(R.id.recview_feedback);
