@@ -13,5 +13,7 @@ public class ChatSystem extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_chat_system );
 
+
+
     }
 }
