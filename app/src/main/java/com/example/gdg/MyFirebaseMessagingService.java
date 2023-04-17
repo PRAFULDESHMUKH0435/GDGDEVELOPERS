@@ -25,6 +25,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
                 .setContentText( msg )
                 .setAutoCancel( true );
 
+
         NotificationManagerCompat manager = NotificationManagerCompat.from( this );
         if (ActivityCompat.checkSelfPermission( this, android.Manifest.permission.POST_NOTIFICATIONS ) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
