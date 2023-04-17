@@ -19,7 +19,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     }
 
     private void getFirebaseMessage (String title, String msg) {
-        NotificationCompat.Builder builder = new NotificationCompat.Builder( this, "majorproject" )
+        NotificationCompat.Builder builder = new NotificationCompat.Builder( this, "gdgdevelopersgroup" )
                 .setSmallIcon( R.drawable.logo )
                 .setContentTitle( title )
                 .setContentText( msg )

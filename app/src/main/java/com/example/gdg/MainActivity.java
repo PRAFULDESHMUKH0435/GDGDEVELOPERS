@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        CODE FOR FIREBASE MESSAGE SENDING
-        FirebaseMessaging.getInstance().subscribeToTopic( "notification")
+        FirebaseMessaging.getInstance().subscribeToTopic( "gdgdevelopers")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
