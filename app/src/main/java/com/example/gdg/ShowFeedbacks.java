@@ -45,14 +45,6 @@ public class ShowFeedbacks extends AppCompatActivity {
         progressDialog.show();
 
 
-        btn = findViewById(R.id.floatingActionButton2);
-        btn.setOnClickListener( new View.OnClickListener( ) {
-            @Override
-            public void onClick (View v) {
-                startActivity( new Intent( ShowFeedbacks.this,ChatSystem.class ) );
-            }
-        } );
-
 
         recyclerView = findViewById(R.id.recview_feedback);
         database = FirebaseDatabase.getInstance().getReference( "reviews");

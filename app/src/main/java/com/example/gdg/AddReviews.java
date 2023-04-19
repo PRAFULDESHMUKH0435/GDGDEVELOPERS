@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.gdg.Models.USERREVIEWMODEL;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
@@ -25,6 +26,72 @@ public class AddReviews extends AppCompatActivity {
     FirebaseDatabase adatabase;
     DatabaseReference adatabaseReference;
     FirebaseUser fuser;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     Button submitfeedbackbtn;
 
 
@@ -61,6 +128,7 @@ public class AddReviews extends AppCompatActivity {
 
         editTextReview = findViewById(R.id.addfeedbackid);
         ratingBar = findViewById(R.id.ratingBar);
+
 
     }
 

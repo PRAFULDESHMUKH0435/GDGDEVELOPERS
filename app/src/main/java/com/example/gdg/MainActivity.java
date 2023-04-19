@@ -95,10 +95,8 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
 
-
         namefield = findViewById(R.id.name_mainpage);
         namefield.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
-
 
 
 

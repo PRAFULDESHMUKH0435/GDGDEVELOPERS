@@ -19,9 +19,6 @@
         android:theme="@style/Theme.GDG"
         tools:targetApi="31">
         <activity
-            android:name=".ChatSystem"
-            android:exported="false" />
-        <activity
             android:name=".ShowFeedbacks"
             android:exported="false" />
         <activity
