@@ -99,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
         namefield.setText(FirebaseAuth.getInstance().getCurrentUser().getEmail());
 
 
-
 //        CODE FOR FIREBASE MESSAGE SENDING
         FirebaseMessaging.getInstance().subscribeToTopic( "gdgdevelopers")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {

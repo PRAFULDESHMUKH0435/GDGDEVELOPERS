@@ -75,6 +75,7 @@
         android:lines="4"
         android:padding="5dp" />
 
+
     <Button
         android:id="@+id/btnSendfeedback"
         android:layout_width="match_parent"
@@ -86,6 +87,12 @@
         android:text="Send Feedback"
         android:textColor="#FFFFFF" />
 
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floatingActionButton3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="true"-->
+<!--        app:srcCompat="@drawable/baseline_logout_24" />-->
 
 
 </LinearLayout>

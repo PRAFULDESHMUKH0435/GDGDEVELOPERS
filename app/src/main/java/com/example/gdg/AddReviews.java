@@ -22,82 +22,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class AddReviews extends AppCompatActivity {
+
+
     EditText addfeedback;
     FirebaseDatabase adatabase;
     DatabaseReference adatabaseReference;
     FirebaseUser fuser;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     Button submitfeedbackbtn;
-
-
     private EditText  editTextReview;
     private RatingBar ratingBar;
-    private Button buttonSubmit;
     private  FirebaseAuth auth;
     private DatabaseReference reviewdatabaseReference;
 
@@ -119,15 +52,24 @@ public class AddReviews extends AppCompatActivity {
                     addfeedback.setError("PLEASE ADD REVIEW HERE....");
                     Toast.makeText( AddReviews.this, "Please Add Review First", Toast.LENGTH_SHORT ).show( );
                 }else {
-//                    addreviewtosystem(addfeedback.getText().toString().trim(),fuser.getEmail().trim());
                     submitreview();
                 }
             }
         } );
 
 
+
         editTextReview = findViewById(R.id.addfeedbackid);
         ratingBar = findViewById(R.id.ratingBar);
+
+//        fab = findViewById(R.id.floatingActionButton3);
+//        fab.setOnClickListener( new View.OnClickListener( ) {
+//            @Override
+//            public void onClick (View v) {
+//                startActivity( new Intent( AddReviews.this,ChatActivity.class ) );
+//            }
+//        } );
+
 
 
     }
@@ -139,6 +81,9 @@ public class AddReviews extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         String uid = auth.getCurrentUser().getUid();
+
+
+
         USERREVIEWMODEL userreviewModel = new USERREVIEWMODEL( emailp, review, rating);
         reviewdatabaseReference.child(uid).setValue(userreviewModel)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
