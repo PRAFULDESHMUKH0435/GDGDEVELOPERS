@@ -35,7 +35,6 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
-
     LinearLayout upcomingevents,pastevents,profile,showfeedbacks;
     FloatingActionButton AddReview;
     FirebaseAuth firebaseAuth;
